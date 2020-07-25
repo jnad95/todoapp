@@ -7,11 +7,11 @@ var port = 3000;
 app.set('view engine', 'ejs');
 
 // static files
-app.use(express.static('./public'));
+app.use(express.static('public'));
 
 //fire controllers
 todoController(app);
 
 //listing to port
 app.listen(port);
-console.log("you are listing to port ${port}");
+console.log(`you are listing to port ${port}`);
